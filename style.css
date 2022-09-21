@@ -74,7 +74,7 @@ body{
 
 }
 
-.tile:hover{
+.tile:hover,.startbtn:hover{
     box-shadow: 2vh 2vh 2vh rgba(0,0,0,0.15), 
     0 2px 2px rgba(0,0,0,0.15), 
     0 4px 4px rgba(0,0,0,0.15), 
@@ -86,4 +86,85 @@ body{
     background-color: #166534;
     flex: 0.5;
     box-shadow: 0px -2vh 2vh rgba(0,0,0,0.15);
+}
+
+.start-dialog{
+    
+}
+
+.blur-background{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #C0C0C0;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.4;
+}
+
+.start-dialog-container{ 
+    height: 35vh;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 25vh;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: #DCFCE7;
+    border-radius: 8px;
+    box-shadow: 0 6px 6px rgba(0,0,0,0.15), 
+    0 2px 2px rgba(0,0,0,0.15), 
+    0 4px 4px rgba(0,0,0,0.15), 
+    0 8px 8px rgba(0,0,0,0.15);
+    z-index: 10000000;
+    width: 20vw;
+    opacity: 1;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.start-dialog-container p{
+    background-color: #166534;
+    margin: 0px;
+    border-radius: 8px 8px 0px 0px;
+    flex: 1;
+    font-size: 4vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+}
+
+fieldset{
+    margin-top: 2vh;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 2vh 0px 2vh;
+    border-style: none;
+    color: #166534;
+    font-weight: bolder;
+}
+
+fieldset input{
+    height: 3vh;
+    border-radius: 8px;
+    border-style: none;
+}
+
+.startbtn{
+    flex: 2;
+    font-size: 2vh;
+    font-weight: bolder;
+    margin: 2vh;
+    background-color: #166534;
+    border-radius: 8px;
+    color: white;
+    border-style: none;
+    padding: 8px;
 }
