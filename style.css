@@ -74,7 +74,7 @@ body{
 
 }
 
-.tile:hover,.startbtn:hover{
+.tile:hover,.startbtn:hover,.replayBtn:hover,.newGameBtn:hover{
     box-shadow: 2vh 2vh 2vh rgba(0,0,0,0.15), 
     0 2px 2px rgba(0,0,0,0.15), 
     0 4px 4px rgba(0,0,0,0.15), 
@@ -88,8 +88,8 @@ body{
     box-shadow: 0px -2vh 2vh rgba(0,0,0,0.15);
 }
 
-.start-dialog{
-    
+.start-dialog,.end-dialog{
+    display: none;
 }
 
 .blur-background{
@@ -104,7 +104,7 @@ body{
     opacity: 0.4;
 }
 
-.start-dialog-container{ 
+.start-dialog-container,.end-dialog-content{ 
     height: 35vh;
     position: absolute;
     margin-left: auto;
@@ -157,7 +157,7 @@ fieldset input{
     border-style: none;
 }
 
-.startbtn{
+.startbtn,.replayBtn,.newGameBtn{
     flex: 2;
     font-size: 2vh;
     font-weight: bolder;
@@ -167,4 +167,18 @@ fieldset input{
     color: white;
     border-style: none;
     padding: 8px;
+}
+
+.replayBtn,.newGameBtn{
+    width: 6vw;  
+}
+
+.end-dialog-content p{
+    font-weight: bolder;
+    color: #166534;
+    font-size: 5vh;
+}
+
+.button-container{
+    flex: 1;
 }
