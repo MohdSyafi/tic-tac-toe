@@ -13,7 +13,7 @@ const Player = (name,symbol,selectedTiles) => {
     ["3-1","3-2","3-3"],
     ["1-1","2-2","3-3"],
     ["3-1","2-2","1-3"],
-  ]
+  ];
   
   function addMove(input) {
     selectedTiles.push(input);
@@ -176,12 +176,12 @@ const gameBoard = ((doc) => {
 
       endDialog.querySelector(".replayBtn").addEventListener("click",e => {
         endDialog.style.display = "none";
-        setupBoard()
+        setupBoard();
       });
 
       endDialog.querySelector(".newGameBtn").addEventListener("click",e => {
         endDialog.style.display = "none";
-        start()
+        start();
       });
     }
 
