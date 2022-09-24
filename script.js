@@ -158,14 +158,21 @@ const gameBoard = ((doc) => {
         }
 
       }
-     
+      else if(Round.getnoOfRound()>9){
+        endGame("");
+      }
+           
     };
 
     const endGame = (winner)=>{
 
       endDialog.style.display = "block";
       const displayWinner = doc.querySelector(".end-dialog-content p");
-      displayWinner.innerHTML = "You win " + winner +" !!";
+
+      if(winner==="")
+        displayWinner.innerHTML = "Its a tie !!";
+      else
+        displayWinner.innerHTML = "You win " + winner +" !!";
 
       endDialog.querySelector(".replayBtn").addEventListener("click",e => {
         endDialog.style.display = "none";
